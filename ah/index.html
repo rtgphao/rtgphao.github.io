@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<link rel="icon" href="https://gw.ruotian.top/RT191%20192.png" sizes="32x32">
+<link rel="icon" href="https://gw.ruotian.top/RT191%20192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="https://gw.ruotian.top/RT191%20192.png">
+<meta name="msapplication-TileImage" content="https://gw.ruotian.top/RT191%20192.png">
+	<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="renderer" content="webkit">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <title>歪比巴卜-RuoTIan日本</title>
+  <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.8.2/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.bootcdn.net/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css" rel="stylesheet">
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="waibibabo.js"></script>
+  <style>
+    #app {
+      position: relative;
+    }
+    #app > .page {
+      min-height: 100vh;
+    }
+    .translate {
+      background-color: #3399CC;
+      padding: 0 100px;
+      position: relative;
+    }
+    .translate .content {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+    }
+    .translate .content > div {
+      color: white;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+    .control {
+
+    }
+    .control button {
+      margin: 5px;
+    }
+    .input {
+      width: 40%;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 0;
+      width: 100%;
+      color: white;
+      font-size: 30px;
+    }
+    header a {
+      color: white;
+    }
+    .copyright {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+    }
+    .copyright a {
+      color: #00ffb7;
+    }
+    .spec {
+      padding: 50px 50px;
+    }
+    .spec article {
+      margin: auto;
+      max-width: 700px;
+    }
+    @media screen and (max-width: 768px) {
+      .translate {
+        padding: 0 20px 30px 20px;
+      }
+      .translate .content {
+        flex-direction: column;
+      }
+      .input {
+        width: 100%;
+      }
+      .spec {
+        padding: 50px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <div class="page translate">
+    <header>
+      <div class="title">
+        <span>歪比巴卜暗号化</span>
+      </div>
+    </header>
+    <div class="content">
+      <div class="form-group input">
+        <label for="text">クリアテキスト</label>
+        <textarea id="text" class="form-control" placeholder="ここにプレーンテキストを入力してください" rows="10"></textarea>
+      </div>
+      <div class="form-group control">
+        <button id="btn-encode" class="btn btn-warning">クリアテキスト => 暗号文</button>
+        <button id="btn-decode" class="btn btn-danger">クリアテキスト <= 暗号文</button>
+      </div>
+      <div class="form-group input">
+        <label for="waibi">暗号文</label>
+        <textarea id="waibi" class="form-control" placeholder="ここに暗号文を入力してください" rows="10"></textarea>
+  </div>
+</div>
+</body>
+</html>
